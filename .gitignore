@@ -5,3 +5,4 @@ __pycache__/
 data/bosch_subset/*.csv
 *.db
 .env
+data/bosch_subset/
