@@ -265,6 +265,8 @@ def get_fmea():
 @app.post("/predict-defect")
 def predict_defect(data: DefectFeatures):
     X_input = pd.DataFrame([data.dict()])
+    # Réordonne les colonnes exactement comme lors de l'entraînement du scaler
+    X_input = X_input[scaler_a.feature_names_in_]
     X_scaled = scaler_a.transform(X_input)
     prediction = model_a.predict(X_scaled)[0]
     proba = model_a.predict_proba(X_scaled)[0].max()
