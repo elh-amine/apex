@@ -1,0 +1,7 @@
+{
+  "name": "APEX Automotive Theme",
+  "dataColors": ["#0A2342", "#C62828", "#FF8F00", "#2E7D32", "#607D8B", "#1565C0"],
+  "background": "#FFFFFF",
+  "foreground": "#1A2535",
+  "tableAccent": "#0A2342"
+}
